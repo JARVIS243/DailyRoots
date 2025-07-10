@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DailyRoots – Routine Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🪴 DailyRoots</h1>
+
+    <!-- Task Planner -->
+    <section>
+      <h2>📝 Plan Your Tasks</h2>
+      <input type="text" id="taskInput" placeholder="Your task..." />
+      <input type="time" id="taskTime" />
+      <button onclick="addTask()">Add Task</button>
+      <ul id="taskList"></ul>
+    </section>
+
+    <!-- Mood Tracker -->
+    <section>
+      <h2>😊 Track Your Mood</h2>
+      <select id="moodSelect" onchange="saveMood()">
+        <option value="">How do you feel today?</option>
+        <option value="😊 Happy">😊 Happy</option>
+        <option value="😐 Neutral">😐 Neutral</option>
+        <option value="😞 Sad">😞 Sad</option>
+        <option value="😡 Angry">😡 Angry</option>
+        <option value="😌 Relaxed">😌 Relaxed</option>
+      </select>
+    </section>
+
+    <!-- Daily Habits -->
+    <section>
+      <h2>📌 Daily Habits</h2>
+      <ul id="habitList"></ul>
+      <input type="text" id="newHabitInput" placeholder="Add custom habit" />
+      <button onclick="addCustomHabit()">Add Habit</button>
+      <button onclick="resetHabits()">Reset Today</button>
+    </section>
+
+    <!-- Daily Quote -->
+    <section>
+      <h2>🌟 Daily Quote</h2>
+      <blockquote id="dailyQuote">Loading...</blockquote>
+    </section>
+
+  <footer>
+    <p>&copy; 2025 DailyRoots.Published by Aju Krishna. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f7faff;
+  color: #222;
+  padding: 20px;
+}
+
+/* Container */
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  color: #2e3a59;
+  margin-bottom: 25px;
+  font-size: 2em;
+}
+h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #4938c9;
+  font-size: 1.3em;
+}
+
+/* Inputs & Buttons */
+input[type="text"],
+input[type="time"],
+select {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 16px;
+  margin-right: 10px;
+  font-size: 1em;
+  background-color: #4938c9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #362dad;
+}
+
+/* Task & Habit List */
+ul {
+  list-style: none;
+  margin-top: 10px;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: #f0f2ff;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-size: 0.95em;
+}
+
+li button {
+  background: #ff6b6b;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 1em;
+}
+li button:hover {
+  background: #e55050;
+}
+
+/* Quote */
+blockquote {
+  font-style: italic;
+  padding: 15px;
+  background: #eae9ff;
+  border-left: 5px solid #4938c9;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-size: 0.95em;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 40px;
+}
